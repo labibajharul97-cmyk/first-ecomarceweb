@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.contain {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo img{
+    position: absolute;
+    left: 80px;
+    top: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.logotext a{
+    position: absolute; 
+    left: 150px; 
+    top: 50px; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Iceberg', sans-serif;
+    color: #000;
+    text-shadow: 2px 2px 30px rgba(51, 49, 49, 0.2);
+    letter-spacing: 1;
+}
+.searchbox{
+    position: fixed;
+    background-color: rgb(210, 219, 226);
+    top: 50px;
+    right: 90px;
+    width: 170px;
+    height: 40px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(43, 41, 41, 0.486);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 30px rgba(39, 38, 38, 0.438);
+    display: flex;
+    z-index: 1;
+}
+.searchbox input{
+    width: 100px;
+    height: 20px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+    font-family: "New Rocker", system-ui;
+    font-size: 15px;
+    padding: 0 10px;
+}
+.siction1{
+    position: absolute;
+    left: 90px;
+    top: 50%;
+    transform: translate(40px,-50%);
+}
+.siction1 img{
+    height: 400px;
+}
+.siction1btn{
+     position: absolute;
+    right: 90px;
+    top: 50%;
+    transform: translate(-40px,-50%);
+}
+.siction1btn h1,h2{
+    font-family: "Rye", serif;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: #5c5555;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.527);
+    text-transform: uppercase;
+}
+samp{
+    color: #7a72FF;
+}
+.siction1btn h1{
+    letter-spacing: 26px;
+}
+.btn{
+    width: 140px;
+    height: 40px;
+    background-color: #333232a8;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.527);
+    color: rgba(241, 235, 235, 0.904);
+    justify-content: center;
+    align-items: center;
+    font-family: "New Rocker", system-ui ;
+    margin-top: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border: transparent !important;
+}  
+.btn:hover{
+    background-color: #7a72FF;
+    transform: all ease 0.6s;
+} 
+.iconarea{
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius:20px ;
+    z-index: 1;
+}
+.iconarea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+.iconarea a i{
+    color: #5c5555;
+}
+.iconarea a:hover .fa-facebook{
+    color: blue
+}
+.iconarea a:hover .fa-instagram{
+    color: rgb(255, 0, 128)
+}
+.iconarea a:hover .fa-youtube{
+    color: rgb(255, 0, 43)
+}
+.prodactsection {
+    width: 85%;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.212);
+    display: flex;
+    margin: 50px auto; /* negative margin বাদ দাও */
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 850px ;
+    background-size: 1000px;
+}
+.prodactsection>h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0, 0.5);
+    font-family:'Iceberg', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #4b4747;
+}
+.prodact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+.prodactbox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px 30px;
+}
+.prodactbox img{
+    height: 200px;
+}
+.prodactbox p{
+    color: #2f2f41;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.prodactbox a{
+    color: #490e0e;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.btn2{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background:linear-gradient(120deg,#7a72FF 30%,#a166f4);
+    color: azure;
+    display: none;
+    animation:backwards cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.prodactbox:hover .btn2{
+    display: flex;
+}
+.prodactbox:hover{
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.103);
+    background-color:whitesmoke ;
+}
+.prodactbox:hover a:last-child{
+    color: aliceblue;
+    transition: all ease 0.3s;
+}
+.about{
+    display: flex;
+    width: 85%;
+    margin: 50px auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.aboutbox{
+    width: 40%;
+    font-family: 'Iceberg', sans-serif ;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutbox h1{
+    color: #333333;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0px;
+}
+.aboutbox h4{
+    color: #333333;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutbox p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #a1a1a1;
+}
+.notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notification h1{
+    font-size: 40px;
+    color: rgb(56, 56, 56);
+}
+.notificationinput{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.192);
+    margin-top: 30px;
+}
+.notificationinput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
+.notificationbtn{
+    width: 120px;
+    height: 40px;
+    background-color: #202020;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.178);
+    font-size: 15px;
+    text-decoration: none;
+}
+.notificationbtn:hover{
+    background-color: #7a72FF;
+    transition: all ease 0.5s;
+}
+footer{
+    background-color: #000;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    color: #f2f2f2ff;
+}
+/* ---------------------- */
+/*   TABLET RESPONSIVE    */
+/* ---------------------- */
+@media (max-width: 992px) {
+    .logotext a {
+        font-size: 35px;
+        left: 130px;
+        top: 40px;
+    }
+
+    .logo img {
+        left: 40px;
+        top: 40px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .searchbox {
+        right: 40px;
+        width: 160px;
+    }
+
+    .siction1 img {
+        height: 300px;
+    }
+
+    .siction1btn h1,h2 {
+        font-size: 50px;
+    }
+
+    .prodactsection {
+        margin-top: 650px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutbox {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .notificationinput {
+        width: 80%;
+    }
+}
+
+/* ---------------------- */
+/*      MOBILE RESPONSIVE */
+/* ---------------------- */
+@media (max-width: 768px) {
+
+    .logo img {
+        left: 20px;
+        top: 30px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .logotext a {
+        left: 80px;
+        top: 30px;
+        font-size: 30px;
+    }
+
+    .searchbox {
+        right: 20px;
+        top: 30px;
+        width: 150px;
+        height: 35px;
+    }
+
+    .searchbox input {
+        font-size: 13px;
+    }
+
+    .siction1 {
+        position: relative;
+        left: 0;
+        top: 120px;
+        transform: translate(0, 0);
+        text-align: center;
+        width: 100%;
+    }
+
+    .siction1 img {
+        height: 220px;
+    }
+
+    .siction1btn {
+        position: relative;
+        right: 0;
+        top: 130px;
+        transform: translate(0, 0);
+        text-align: center;
+        width: 100%;
+    }
+
+    .siction1btn h1,h2 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .iconarea {
+        left: 10px;
+        padding: 10px;
+    }
+
+    .prodactsection {
+        width: 95%;
+        margin-top: 500px;
+    }
+
+    .prodactbox {
+        width: 160px;
+        height: 260px;
+    }
+
+    .prodactbox img {
+        height: 150px;
+    }
+
+    .prodactbox p {
+        font-size: 16px;
+    }
+
+    .about {
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+    }
+
+    .aboutbox {
+        width: 100%;
+    }
+
+    .notification h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .notificationinput {
+        width: 90%;
+        height: 50px;
+    }
+
+    .notificationbtn {
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+    }
+}
+
+/* ---------------------- */
+/* SMALL MOBILE 480px     */
+/* ---------------------- */
+@media (max-width: 480px) {
+
+    .logotext a {
+        font-size: 25px;
+        top: 25px;
+        left: 70px;
+    }
+
+    .searchbox {
+        width: 130px;
+        height: 30px;
+    }
+
+    .siction1 img {
+        height: 180px;
+    }
+
+    .siction1btn h1,h2 {
+        font-size: 32px;
+    }
+
+    .prodactsection h3 {
+        font-size: 30px;
+    }
+
+    .prodactbox {
+        width: 140px;
+        height: 230px;
+    }
+
+    .prodactbox img {
+        height: 120px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+/* ---------- FIX FOR TABLET OVERLAP (768px–992px) ---------- */
+@media (max-width: 992px) {
+
+    .siction1,
+    .siction1btn {
+        position: relative !important;
+        top: unset !important;
+        left: unset !important;
+        right: unset !important;
+        transform: none !important;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .siction1 img {
+        height: 260px !important;
+        margin: 0 auto;
+    }
+
+    .siction1btn h1,
+    .siction1btn h2 {
+        font-size: 45px !important;
+        letter-spacing: 5px !important;
+        line-height: 50px;
+    }
+
+    .btn {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Product section নিচে নামানোর সমস্যা ঠিক */
+    .prodactsection {
+        margin-top: 100px !important;
+    }
+}
+/* ------------ iPad Pro 1024px FIX ------------ */
+@media (min-width: 992px) and (max-width: 1100px) {
+
+    /* Banner Image */
+    .siction1 {
+        position: relative !important;
+        left: 0 !important;
+        top: 140px !important;
+        transform: none !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .siction1 img {
+        height: 350px !important;
+        margin: 0 auto;
+    }
+
+    /* Winter Collection Text */
+    .siction1btn {
+        position: relative !important;
+        right: 0 !important;
+        top: 160px !important;
+        transform: none !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .siction1btn h1,
+    .siction1btn h2 {
+        font-size: 65px !important;
+        line-height: 70px !important;
+        letter-spacing: 8px !important;
+    }
+
+    .btn {
+        margin: 20px auto 0 auto;
+    }
+
+    /* Product Section too far down fix */
+    .prodactsection {
+        margin-top: 350px !important;
+    }
+}
